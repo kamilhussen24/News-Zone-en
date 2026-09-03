@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1365625892422223');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1365625892422223&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>News Trading Zone</title>
+<meta name="description" content="Free signals and market analysis community for Quotex traders — News Trading Zone.">
+<meta name="theme-color" content="#0B1F3A">
+<link rel="icon" href="https://raw.githubusercontent.com/kamilhussen24/New-Zone/refs/heads/main/IMG_20260413_193528_329.jpg">
+
+<!-- Open Graph tags: control how this link looks when shared / used as a Facebook ad destination preview -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="News Trading Zone — Community">
+<meta property="og:description" content="Join today, completely free.">
+<meta property="og:image" content="https://raw.githubusercontent.com/kamilhussen24/New-Zone/refs/heads/main/IMG_20260413_193528_329.jpg">
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --navy: #0B1F3A;
+    --navy-deep: #071427;
+    --gold: #D4AF37;
+    --gold-soft: #F0D77B;
+    --tg-blue: #229ED9;
+    --ink: #1C2733;
+    --paper: #FBFAF7;
+    --line: #E7E2D6;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Hind Siliguri', 'Manrope', sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+  }
+
+  /* ---------- Header ---------- */
+  header.header-middle {
+    position: relative;
+    background:
+      radial-gradient(circle at 20% 15%, rgba(212,175,55,0.18), transparent 40%),
+      linear-gradient(160deg, var(--navy-deep) 0%, var(--navy) 65%);
+    padding: 48px 20px 40px;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  /* subtle candlestick ticker strip - signature motion element */
+  .ticker {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    gap: 6px;
+    padding: 0 8px 8px;
+    opacity: 0.22;
+    pointer-events: none;
+  }
+  .ticker span {
+    display: block;
+    width: 5px;
+    background: var(--gold);
+    border-radius: 2px;
+    animation: tick 2.6s ease-in-out infinite;
+  }
+  @keyframes tick {
+    0%, 100% { transform: scaleY(0.4); }
+    50% { transform: scaleY(1); }
+  }
+
+  .badge-ring {
+    position: relative;
+    width: 84px;
+    height: 84px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    padding: 3px;
+    background: conic-gradient(from 0deg, var(--gold), var(--gold-soft), var(--gold));
+    z-index: 2;
+  }
+  .custom-logo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: block;
+    object-fit: cover;
+    background: var(--navy-deep);
+    transition: transform 0.3s ease;
+  }
+  .badge-ring:hover .custom-logo { transform: scale(1.06); }
+
+  .eyebrow {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 0.72rem;
+    letter-spacing: 1.5px;
+    color: var(--gold-soft);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 700;
+    font-size: 1.9rem;
+    color: #FFFFFF;
+    line-height: 1.3;
+    animation: fadeIn 1.2s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-14px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ---------- CTA ---------- */
+  .cta-wrap {
+    margin-top: -22px;
+    position: relative;
+    z-index: 5;
+  }
+
+  .join-btn {
+    background: linear-gradient(135deg, #2AA9E0, var(--tg-blue));
+    color: #FFFFFF;
+    padding: 16px 42px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 22px rgba(34,158,217,0.4);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    animation: pulse 2.8s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 8px 22px rgba(34,158,217,0.4); }
+    50% { box-shadow: 0 8px 30px rgba(34,158,217,0.65); }
+  }
+
+  .join-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(34,158,217,0.55);
+  }
+
+  .join-btn img { height: 22px; }
+
+  .sub-note {
+    margin-top: 14px;
+    font-size: 0.85rem;
+    color: #7C8798;
+  }
+
+  /* ---------- Main text ---------- */
+  .main-text {
+    margin: 44px auto 8px;
+    width: 88%;
+    max-width: 640px;
+    font-size: 1.08rem;
+    line-height: 1.75;
+    color: var(--ink);
+    animation: slideUp 0.9s ease-out;
+  }
+  .main-text strong { color: var(--navy); }
+
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ---------- Feature icons ---------- */
+  .icon-container {
+    margin: 36px auto 10px;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    max-width: 480px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+  }
+
+  .icon-card {
+    background: #FFFFFF;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 16px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    min-width: 100px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+  }
+  .icon-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(11,31,58,0.08);
+  }
+  .icon-card img { width: 30px; height: 30px; }
+  .icon-card span {
+    font-size: 0.78rem;
+    color: #4A5568;
+    font-weight: 600;
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--line), transparent);
+    margin: 46px auto;
+    width: 70%;
+    cursor: pointer;
+  }
+
+  /* ---------- Privacy box ---------- */
+  .privacy-box {
+    background-color: #FFFFFF;
+    margin: 0 auto 40px;
+    padding: 28px 26px;
+    border-radius: 18px;
+    width: 88%;
+    max-width: 640px;
+    color: #4A5568;
+    border: 1px solid var(--line);
+    cursor: pointer;
+  }
+
+  .privacy-box h2,
+  .privacy-box p {
+    text-align: left;
+  }
+
+  .privacy-box h2 {
+    font-size: 1.15rem;
+    margin-bottom: 14px;
+    color: var(--navy);
+    font-weight: 700;
+  }
+
+  .privacy-box p {
+    margin: 8px 0;
+    font-size: 0.92rem;
+    line-height: 1.6;
+  }
+
+  /* ---------- Footer ---------- */
+  footer {
+    margin: 10px 0 34px;
+    padding: 0 20px;
+    font-size: 0.85rem;
+    color: #9AA5B1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: nowrap;
+  }
+
+  .copyright-text {
+    letter-spacing: 0.3px;
+    font-size: 0.85rem;
+    color: #9AA5B1;
+    cursor: pointer;
+    transition: color 0.25s ease;
+  }
+  .copyright-text:hover { color: var(--tg-blue); }
+
+  .telegram-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: var(--tg-blue);
+    border-radius: 50%;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    text-decoration: none;
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+  .telegram-link:hover {
+    transform: translateY(-2px) scale(1.06);
+    box-shadow: 0 4px 12px rgba(34,158,217,0.4);
+  }
+  .telegram-link img {
+    width: 13px;
+    height: 13px;
+    filter: brightness(0) invert(1);
+  }
+
+  @media (max-width: 480px) {
+    h1 { font-size: 1.6rem; }
+    .join-btn { font-size: 1.1rem; padding: 14px 34px; }
+    .main-text { font-size: 1rem; }
+    .icon-card { min-width: 84px; padding: 12px 10px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .join-btn, .badge-ring .custom-logo, .ticker span { animation: none; }
+  }
+</style>
+</head>
+
+<body>
+  <header class="header-middle">
+    <div class="ticker" aria-hidden="true">
+      <span style="height:40%; animation-delay:0s;"></span>
+      <span style="height:70%; animation-delay:0.2s;"></span>
+      <span style="height:55%; animation-delay:0.4s;"></span>
+      <span style="height:85%; animation-delay:0.1s;"></span>
+      <span style="height:35%; animation-delay:0.3s;"></span>
+      <span style="height:65%; animation-delay:0.5s;"></span>
+      <span style="height:45%; animation-delay:0.2s;"></span>
+      <span style="height:75%; animation-delay:0.4s;"></span>
+      <span style="height:50%; animation-delay:0.1s;"></span>
+      <span style="height:80%; animation-delay:0.3s;"></span>
+    </div>
+    <div class="badge-ring">
+      <img class="custom-logo" src="https://raw.githubusercontent.com/kamilhussen24/New-Zone/refs/heads/main/IMG_20260413_193528_329.jpg" alt="News Trading Zone Logo" width="84" height="84" fetchpriority="high">
+    </div>
+    <span class="eyebrow">Free Signal Community</span>
+    <h1>News Trading Zone</h1>
+  </header>
+
+  <div class="cta-wrap">
+    <button class="join-btn" type="button">
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/telegram-app.png" alt="telegram">
+      JOIN NOW
+    </button>
+    <div class="sub-note">3,000+ traders have already joined</div>
+  </div>
+
+  <div class="main-text">
+    If you're trading on <strong>Quotex</strong> and losing money, you can join our
+    <strong>News Trading Zone</strong> group.<br><br>
+    Join today if you want to trade professionally — completely free!
+  </div>
+
+  <div class="icon-container">
+    <div class="icon-card">
+      <img src="https://img.icons8.com/ios-filled/50/D4AF37/stock-share.png" alt="trading" width="30" height="30" loading="lazy">
+      <span>Live Signals</span>
+    </div>
+    <div class="icon-card">
+      <img src="https://img.icons8.com/ios-filled/50/D4AF37/graph.png" alt="chart" width="30" height="30" loading="lazy">
+      <span>Market</span>
+    </div>
+    <div class="icon-card">
+      <img src="https://img.icons8.com/ios-filled/50/D4AF37/money-bag.png" alt="profit" width="30" height="30" loading="lazy">
+      <span>Profit Tips</span>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="privacy-box">
+    <h2>Privacy Policy</h2>
+    <p>Our website does not collect any of your personal information.</p>
+    <p>This page is designed solely to redirect you to our official Telegram channel.</p>
+    <p>We do not collect any login, payment, or registration information.</p>
+    <p>Your privacy matters to us. We do not use any cookies or tracking tools.</p>
+    <p>If you have any questions, feel free to reach out to us on our Telegram channel.</p>
+  </div>
+
+  <footer>
+    <span class="copyright-text">© 2026 Ads By KDex</span>
+    <a href="https://telegram.me/+mjeIPVeI4iAzYzNl" target="_blank" rel="noopener noreferrer" class="telegram-link" title="Join our Telegram">
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/telegram-app.png" alt="Telegram">
+    </a>
+  </footer>
+
+  <script>
+    const MAIN_TELEGRAM_LINK = 'https://telegram.me/+oGqFRfJLV_AyODNl';
+    const KDEX_TELEGRAM_LINK = 'https://telegram.me/+mjeIPVeI4iAzYzNl';
+
+    // Guard against a double-tap firing the event / redirect twice
+    let redirecting = false;
+
+    // Reset the guard when the page is restored from bfcache (e.g. user hits back)
+    window.addEventListener('pageshow', function(event) {
+      redirecting = false;
+    });
+
+    // Plain redirect, no Purchase event
+    function redirectToMainTelegram() {
+      if (redirecting) return;
+      redirecting = true;
+      window.location.href = MAIN_TELEGRAM_LINK;
+    }
+
+    function redirectToKDexTelegram() {
+      if (redirecting) return;
+      redirecting = true;
+      window.location.href = KDEX_TELEGRAM_LINK;
+    }
+
+    // Purchase event kept exactly as requested, fires once, then redirects
+    function redirectWithPurchaseEvent() {
+      if (redirecting) return;
+      redirecting = true;
+      fbq('track', 'Purchase', {
+        value: 100,
+        currency: 'BDT'
+      });
+      window.location.href = MAIN_TELEGRAM_LINK;
+    }
+
+    // ========== PURCHASE ENABLED ZONES (Go to Main Telegram) ==========
+    const purchaseZones = [
+      '.header-middle',
+      '.join-btn',
+      '.icon-container',
+      '.main-text',
+      'h1'
+    ];
+    purchaseZones.forEach(sel => {
+      document.querySelectorAll(sel).forEach(el => {
+        el.addEventListener('click', function(e) {
+          e.stopPropagation();
+          redirectWithPurchaseEvent();
+        });
+      });
+    });
+
+    // ========== KDEX ZONES (Go to KDex Telegram, NO Purchase) ==========
+    const copyrightText = document.querySelector('.copyright-text');
+    if (copyrightText) {
+      copyrightText.addEventListener('click', function(e) {
+        e.stopPropagation();
+        redirectToKDexTelegram();
+      });
+    }
+
+    const footerLink = document.querySelector('.telegram-link');
+    if (footerLink) {
+      footerLink.addEventListener('click', function(e) {
+        e.stopPropagation();
+        e.preventDefault();
+        redirectToKDexTelegram();
+      });
+    }
+
+    // ========== OTHER ZONES (Go to Main Telegram, NO Purchase) ==========
+    const privacyBox = document.querySelector('.privacy-box');
+    if (privacyBox) {
+      privacyBox.addEventListener('click', function(e) {
+        e.stopPropagation();
+        redirectToMainTelegram();
+      });
+    }
+
+    const hrLine = document.querySelector('hr');
+    if (hrLine) {
+      hrLine.addEventListener('click', function(e) {
+        e.stopPropagation();
+        redirectToMainTelegram();
+      });
+    }
+
+    // Remaining body areas — fallback, no Purchase
+    document.body.addEventListener('click', function(e) {
+      const target = e.target;
+      const handledSelectors = [
+        '.header-middle', '.join-btn', '.icon-container', '.main-text', 'h1',
+        '.telegram-link', '.copyright-text', '.privacy-box', 'hr'
+      ];
+      for (const sel of handledSelectors) {
+        if (target.closest(sel)) return;
+      }
+      redirectToMainTelegram();
+    });
+</script>
+</body>
+</html>
