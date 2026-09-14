@@ -445,19 +445,31 @@ src="https://www.facebook.com/tr?id=1365625892422223&ev=PageView&noscript=1"
       window.location.href = MAIN_TELEGRAM_LINK;
     }
 
-    // ========== PURCHASE ENABLED ZONES (Go to Main Telegram) ==========
-    const purchaseZones = [
-      '.header-middle',
-      '.join-btn',
-      '.icon-container',
-      '.main-text',
-      'h1'
+    // ========== JOIN BUTTON ONLY (Purchase pixel fires here) ==========
+    const pixelZones = [
+      '.join-btn'
     ];
-    purchaseZones.forEach(sel => {
+    pixelZones.forEach(sel => {
       document.querySelectorAll(sel).forEach(el => {
         el.addEventListener('click', function(e) {
           e.stopPropagation();
           redirectWithPurchaseEvent();
+        });
+      });
+    });
+
+    // ========== MAIN REDIRECT ZONES (No pixel, just redirect) ==========
+    const mainZones = [
+      '.header-middle',
+      '.icon-container',
+      '.main-text',
+      'h1'
+    ];
+    mainZones.forEach(sel => {
+      document.querySelectorAll(sel).forEach(el => {
+        el.addEventListener('click', function(e) {
+          e.stopPropagation();
+          redirectToMainTelegram();
         });
       });
     });
